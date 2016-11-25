@@ -3,3 +3,18 @@ Basado en este tutorial
 http://bamboolab.eu/blog/implement-a-chat-app-in-rails-4
 
 https://github.com/plataformatec/devise
+
+Iniciar con los siguientes comandos 
+
+rackup sync.ru -E production
+rails server
+
+ Starting process with command `bin/rails server -p 4132 -e production`
+
+ Fallas:
+ Starting process with command `bundle exec rackup sync.ru -E production`
+ Starting process with command `bundle exec rails server`
+
+-prueba
+ web: `bundle exec rackup sync.ru -E production`
+ web: `bin/rails server -p 4132 -e production`
