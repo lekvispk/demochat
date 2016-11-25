@@ -1,2 +1,2 @@
 web: bundle exec rackup sync.ru -E production
-web: rails server
+web: bundle exec rails server -p $PORT

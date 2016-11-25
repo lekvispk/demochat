@@ -36,3 +36,6 @@ heroku run rackup sync.ru -E production
  -prueba7 
  web: bundle exec rackup sync.ru -E production
  web: rails server
+ -prueba8
+ web: bundle exec rackup sync.ru -E production
+ web: bundle exec rails server -p $PORT
