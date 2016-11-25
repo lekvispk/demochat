@@ -1,1 +1,1 @@
-web: bin/rackup sync.ru -E production
+web: rackup sync.ru -E production
