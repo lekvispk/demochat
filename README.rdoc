@@ -1,3 +1,5 @@
 Basado en este tutorial
 
 http://bamboolab.eu/blog/implement-a-chat-app-in-rails-4
+
+https://github.com/plataformatec/devise
