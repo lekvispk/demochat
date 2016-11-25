@@ -18,3 +18,8 @@ rails server
 -prueba
  web: `bundle exec rackup sync.ru -E production`
  web: `bin/rails server -p 4132 -e production`
+ -prueba2
+ web: bin/rackup sync.ru -E production
+ web: bin/rails server -p 4132 -e production
+ -prueba3
+ web: bin/rackup sync.ru -E production
