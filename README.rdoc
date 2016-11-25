@@ -15,6 +15,12 @@ rails server
  Starting process with command `bundle exec rackup sync.ru -E production`
  Starting process with command `bundle exec rails server`
 
+ayuda-> web: bundle exec rackup -p $PORT
+heroku run rackup sync.ru -E production
+
+
+-prueba1
+ web: bundle exec rackup sync.ru -E production
 -prueba
  web: `bundle exec rackup sync.ru -E production`
  web: `bin/rails server -p 4132 -e production`
@@ -27,3 +33,6 @@ rails server
  web: rackup sync.ru -E production
  -prueba6
  web: bin/rails server -p 4132 -e production
+ -prueba7 
+ web: bundle exec rackup sync.ru -E production
+ web: rails server
