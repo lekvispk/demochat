@@ -35,7 +35,7 @@ class MessagesController < ApplicationController
     @new_message = current_user.messages.build
   end
 
-  # GET /messages/1
+  # GET /messages/1 
   # GET /messages/1.json
   def show
     @message = Message.find(params[:id])
@@ -58,9 +58,12 @@ class MessagesController < ApplicationController
 
     respond_to do |format|
       if @message.save
+
+        ConfirmacionMailer.confirmacion_email(current_user).deliver_now
+
+        sync_new @message
         #format.html { redirect_to @message, notice: 'Message was successfully created.' }
         #format.json { render :show, status: :created, location: @message }
-        sync_new @message
       else
         format.html { render :new }
         format.json { render json: @message.errors, status: :unprocessable_entity }
